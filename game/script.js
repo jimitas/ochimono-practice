@@ -182,7 +182,7 @@
     current.x = Math.floor((COLS - current.matrix.length) / 2);
     current.y = -2;
     next = createPiece(nextType());
-    if (collides(current.matrix, current.x, current.y + 1) && collides(current.matrix, current.x, current.y)) {
+    if (collides(current.matrix, current.x, 0)) {
       triggerGameOver();
     }
   }
